@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Ryu's About Me" name="title"/>
+<meta content="Here you can find my discord, and Valorant statistics" name="description"/>
+<meta content="Ryu" name="author"/>
+<meta content="#c8a2ff" name="theme-color"/>
+<meta content="index, follow" name="robots"/>
+<meta content="website" property="og:type"/>
+<meta content="About me" property="og:title"/>
+<meta content="Here you can find my Discord, and valorant Statistics" property="og:description"/>
+<meta content="https://i.imgur.com/knqgrl7.png" property="og:image"/>
+<meta content="https://itz-ryuu.github.io/site/" property="og:url"/>
+<title>Ryu's Page</title>
+<link href="styles.css" rel="stylesheet"/>
+<link href="assets/favicon.ico" rel="icon"/>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+<div class="site-fade-in">
+  <!-- Twinkling Stars Background -->
+  <div class="stars" id="stars"></div>
+  <!-- Clock in Top Right -->
+  <div class="clock" id="clock">--:--:--</div>
+  <!-- Profile Card -->
+  <div class="container">
+    <h1>Hi i'm Ryu <span id="typed"></span></h1>
+    <img alt="Profile Picture" class="profile" src="assets/General_assets/profile.jpg"/>
+    <div class="subtitle">A passionate gamer and bike rider</div>
+    <div class="divider">--------------</div>
+    <!-- Social Links -->
+    <div class="discord">
+      <div class="copy-box" onclick="copyDiscord()">
+        <img alt="Discord Icon" src="assets/General_assets/dis.png"/>
+        itz.ryu.
+      </div>
+      <a class="copy-box insta-box" href="https://www.instagram.com/ryu_smx125/" target="_blank" rel="noopener">
+        <img alt="Instagram" src="assets/General_assets/ig.png"/>
+        ryu_smx125
+      </a>
+    </div>
+    <!-- Inner Darker Box With your specs -->
+    <div class="inner-box">
+      <strong>My PC Specs</strong>
+      <div> </div>
+      --------------
+      <div class="specs">
+        <div class="spec">
+          <img alt="CPU" src="assets/icons/cpu.png"/>
+          <div class="spec-label">Ryzen 5 5500</div>
+        </div>
+        <div class="spec">
+          <img alt="GPU" src="assets/icons/gpu.png"/>
+          <div class="spec-label">RTX 2060 Super</div>
+        </div>
+        <div class="spec">
+          <img alt="SSD" src="assets/icons/ssd.png"/>
+          <div class="spec-label">SNV3S 1TB</div>
+        </div>
+        <div class="spec">
+          <img alt="RAM" src="assets/icons/ram.png"/>
+          <div class="spec-label">Corsair Vengeance LPX 32GB</div>
+        </div>
+        <div class="spec">
+          <img alt="Motherboard" src="assets/icons/mobo.png"/>
+          <div class="spec-label">MSI A520M-A PRO</div>
+        </div>
+      </div>
+    </div>
+    <!-- About Me Box -->
+    <div class="inner-box">
+      <strong>About Me</strong>
+      <div> </div>
+      --------------
+      <div class="about-me">
+        <div class="about-row"><span class="label">Name:</span> Ryu</div>
+        <div class="about-row"><span class="label">Age:</span> 17</div>
+        <div class="about-row"><span class="label">From:</span> Czech Republic</div>
+        <div class="about-row"><span class="label">Languages:</span> Czech, English</div>
+        <div class="about-row"><span class="label">Hobbies:</span> Gaming, Coding, Music, Movies, Motorcycles</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Star Generator Script -->
+<script>
+  const stars = document.getElementById('stars');
+  const totalStars = 400;
+
+  for (let i = 0; i < totalStars; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    star.style.top = Math.random() * 100 + 'vh';
+    star.style.left = Math.random() * 100 + 'vw';
+    star.style.animationDuration = (Math.random() * 3 + 1) + 's';
+    stars.appendChild(star);
+  }
+</script>
+
+<script>
+  function updateClock() {
+    const now = new Date();
+    const options = {
+      timeZone: 'Europe/Prague',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    };
+    const formatter = new Intl.DateTimeFormat([], options);
+    document.getElementById("clock").textContent = formatter.format(now);
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+
+  function copyDiscord() {
+    navigator.clipboard.writeText("itz.ryu.");
+    alert("Copied Discord: itz.ryu.");
+  }
+</script>
+
+<script>
+  var typed = new Typed("#typed", {
+    strings: ["FiveM player.", "Motorcycle rider.", "Music enthusiast."],
+    typeSpeed: 50,
+    backSpeed: 30,
+    loop: true
+  });
+</script>
+</body>
+</html>
