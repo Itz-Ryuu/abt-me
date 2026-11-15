@@ -3,35 +3,26 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>RYUツ — Valorant Rank, Agent, Settings &amp; PC Build</title>
-<meta name="description" content="Valorant profile for RYUツ#KAGE: current rank, main agents, recent matches, in-game sensitivity, crosshair code, video settings and full PC build specs." />
-<meta property="og:title" content="RYUツ — Valorant Rank, Agent, Settings &amp; PC Build" />
-<meta property="og:description" content="Valorant profile for RYUツ#KAGE: rank, main agents, settings and PC build." />
-<meta property="og:type" content="profile" />
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#090909" />
+<title>RYU — Personal Portfolio</title>
+<meta name="description" content="The personal space of RYU. Into motorcycles, code, gaming, music and culture." />
+<meta property="og:title" content="RYU — Personal Portfolio" />
+<meta property="og:description" content="Motorcycles, code, gaming and everything with a little character." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
-<link rel="stylesheet" href="src/styles.css?v=4" />
+<link rel="stylesheet" href="src/styles.css?v=5" />
 </head>
 <body>
 <script>
 (async function () {
-  var res = await fetch("src/page.html?v=4", { cache: "no-cache" });
-  var html = await res.text();
-  var holder = document.createElement("div");
-  holder.innerHTML = html;
-  var scripts = Array.prototype.slice.call(holder.querySelectorAll("script"));
-  scripts.forEach(function (s) { s.parentNode.removeChild(s); });
-  while (holder.firstChild) document.body.appendChild(holder.firstChild);
-  scripts.forEach(function (s) {
-    var n = document.createElement("script");
-    if (s.src) n.src = s.src; else n.textContent = s.textContent;
-    document.body.appendChild(n);
-  });
-  if (location.hash) {
-    var t = document.querySelector(location.hash);
-    if (t) t.scrollIntoView();
+  try {
+    var response = await fetch("src/page.html?v=5", { cache: "no-cache" });
+    if (!response.ok) throw new Error("Unable to load page content");
+    document.body.innerHTML = await response.text();
+  } catch (error) {
+    document.body.innerHTML = '<main style="padding:3rem;color:#f3f3f0;font-family:system-ui"><h1>RYU.</h1><p>Something went wrong while loading the page. Please refresh.</p></main>';
   }
 })();
 </script>
