@@ -1,264 +1,125 @@
-<div id="loader">
-  <p class="eyebrow">Loading profile</p>
-  <h2>RYUツ</h2>
-  <div class="bar"><div id="loader-bar"></div></div>
-  <p class="pct" id="loader-pct">000%</p>
-</div>
-
-<div class="topnav">
-  <nav class="wrap" aria-label="Page navigation">
-    <a href="#about">Who I Am</a>
-    <a href="#rank">Rank</a>
-    <a href="#overview">Overview</a>
-    <a href="#settings">Settings</a>
-    <a href="#build">Build</a>
+<div class="ambient" aria-hidden="true"></div>
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="RYU home"><span class="brand-mark">R</span><span>RYU<span class="brand-dot">.</span></span></a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#about">About</a><a href="#interests">Interests</a><a href="#ride">My ride</a><a href="#contact">Contact</a>
   </nav>
-</div>
+  <a class="nav-cta" href="https://github.com/Itz-Ryuu" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+</header>
 
-<main>
-  <header class="hero" id="home">
-    <div class="wrap hero-grid">
-      <div class="reveal">
-        <div class="avatar-wrap">
-          <img src="src/assets/profile.jpg" alt="RYUツ profile picture" width="224" height="224" />
-        </div>
+<main id="home">
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot"></span> PERSONAL SPACE / CZECHIA</p>
+      <h1>Not here to<br><span>blend in.</span></h1>
+      <p class="hero-lead">I'm RYU — into motorcycles, code, games and everything with a little character. This is my corner of the internet.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#about">Get to know me <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="https://github.com/Itz-Ryuu" target="_blank" rel="noreferrer">Explore my GitHub ↗</a>
       </div>
-      <div class="reveal hero-text" delay="120">
-        <p class="eyebrow">RYUツ#KAGE</p>
-        <h1>RYUツ</h1>
-        <p class="tagline">Two wheels on the road, a headset on at night.</p>
-      </div>
+      <div class="hero-meta"><span>INDEPENDENT MINDSET</span><span>—</span><span>ALWAYS BUILDING SOMETHING</span></div>
     </div>
-  </header>
+    <div class="hero-visual">
+      <div class="portrait-frame">
+        <div class="portrait-label">RYU / 001</div>
+        <img src="src/assets/profile.jpg" alt="RYU's profile portrait" />
+        <div class="portrait-bottom"><span>NO TEMPLATE LIFE.</span><span>© RYU</span></div>
+      </div>
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <span class="visual-cross cross-one">＋</span><span class="visual-cross cross-two">＋</span>
+    </div>
+    <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+  </section>
 
-  <section class="block wrap" id="about">
-    <div class="head reveal">
-      <p class="eyebrow">01 — Who I Am</p>
-      <h2>Who I Am</h2>
-    </div>
-    <div class="reveal">
-      <div class="grid2 about">
-        <p>18, based in Czechia. Days on two wheels, nights behind a keyboard — that's most of it.</p>
-        <p>Gaming splits between competitive shooters that reward precision and roleplay servers where I'd rather live a character than chase a scoreboard.</p>
-      </div>
-      <div class="facts">
-        <div><p class="v">18</p><p class="eyebrow">Years old</p></div>
-        <div><p class="v">4</p><p class="eyebrow">Main games</p></div>
-        <div><p class="v">CZ</p><p class="eyebrow">Based in</p></div>
+  <section class="section wrap" id="about">
+    <div class="section-index"><span>01</span><span>THE PERSON</span></div>
+    <div class="section-grid">
+      <h2>A little about<br><em>me.</em></h2>
+      <div class="section-copy">
+        <p class="large-copy">I like things that feel real, look good and have a purpose.</p>
+        <p>Most of my time goes into a mix of work, studying and the things I genuinely enjoy. I'm drawn to the technical side of things, but I care just as much about style, atmosphere and the details that make something feel personal.</p>
+        <p>I'm not trying to fit one category. A bit of a creative mind, a bit of a petrolhead, and always curious about what I can make next.</p>
       </div>
     </div>
   </section>
 
-  <section class="block wrap" id="rank">
-    <div class="head reveal">
-      <p class="eyebrow">02 — Rank</p>
-      <h2>Rank</h2>
-    </div>
-    <div class="reveal">
-      <div class="panel rankcard">
-        <div>
-          <p class="eyebrow">Current Rank <span id="live-badge" hidden>· LIVE</span></p>
-          <p class="tier" id="live-tier">Gold 1</p>
-          <p class="sub" id="live-sub">Level 78 · 32W - 26L · Peak Gold 1</p>
-        </div>
-        <div class="right">
-          <div class="track"><div id="live-bar" style="width:54.3%"></div></div>
-          <p class="eyebrow" style="margin-top:0.5rem" id="live-wr">55.2% win rate</p>
-        </div>
+  <section class="section interests-section" id="interests">
+    <div class="wrap">
+      <div class="section-index"><span>02</span><span>WHAT I'M INTO</span></div>
+      <div class="section-heading-row"><h2>Different lanes.<br><em>Same energy.</em></h2><p>A few things that keep me busy<br>when I'm not doing the usual.</p></div>
+      <div class="interest-grid">
+        <article class="interest-card interest-code"><div class="card-top"><span>01 / CREATE</span><span>⌘</span></div><div class="interest-symbol symbol-code">&lt;/&gt;</div><h3>Code & digital</h3><p>Building websites, experimenting with ideas and learning how things work under the hood.</p><span class="card-arrow">↗</span></article>
+        <article class="interest-card interest-game"><div class="card-top"><span>02 / PLAY</span><span>◉</span></div><div class="interest-symbol symbol-game">✳</div><h3>Gaming</h3><p>From competitive shooters to immersive roleplay. The experience matters as much as the win.</p><span class="card-arrow">↗</span></article>
+        <article class="interest-card interest-moto"><div class="card-top"><span>03 / RIDE</span><span>↗</span></div><div class="interest-symbol symbol-moto">02</div><h3>Motorcycles</h3><p>Supermoto, winding roads, mechanical details and the feeling of being out there.</p><span class="card-arrow">↗</span></article>
+        <article class="interest-card interest-culture"><div class="card-top"><span>04 / FEEL</span><span>♪</span></div><div class="interest-symbol symbol-culture">♫</div><h3>Music & culture</h3><p>Music, films, visual style and the little things that set a mood or inspire an idea.</p><span class="card-arrow">↗</span></article>
       </div>
     </div>
   </section>
 
-  <section class="block wrap" id="overview">
-    <div class="head reveal">
-      <p class="eyebrow">03 — Overview</p>
-      <h2>Overview</h2>
-    </div>
-    <div class="reveal">
-      <div class="gridpanels">
-        <div class="panel">
-          <h3 class="eyebrow">Main Agents</h3>
-          <div class="agents" id="live-agents">
-            <div class="agent">
-              <img loading="lazy" src="https://media.valorant-api.com/agents/22697a3d-45bf-8dd7-4fec-84a9e28c69d7/fullportrait.png" alt="Chamber official Valorant agent artwork" />
-              <div class="info">
-                <p class="name">Chamber</p>
-                <p class="role">Sentinel</p>
-                <div class="row"><span class="wr">58% WR</span><span class="kd">1.12 KD</span></div>
-              </div>
-            </div>
-            <div class="agent">
-              <img loading="lazy" src="https://media.valorant-api.com/agents/1dbf2edd-4729-0984-3115-daa5eed44993/fullportrait.png" alt="Clove official Valorant agent artwork" />
-              <div class="info">
-                <p class="name">Clove</p>
-                <p class="role">Controller</p>
-                <div class="row"><span class="wr">61% WR</span><span class="kd">0.95 KD</span></div>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-
-  <section class="block wrap" id="settings">
-    <div class="head reveal">
-      <p class="eyebrow">04 — In-Game Settings</p>
-      <h2>In-Game Settings</h2>
-    </div>
-    <div class="reveal">
-      <div class="grid3">
-        <div class="panel">
-          <h3 class="eyebrow">Mouse &amp; Sensitivity</h3>
-          <dl class="rows">
-            <div><dt>DPI</dt><dd>800</dd></div>
-            <div><dt>Sensitivity: Aim</dt><dd>0.27</dd></div>
-            <div><dt>eDPI</dt><dd>216</dd></div>
-            <div><dt>Scoped Sens Multiplier</dt><dd>1</dd></div>
-            <div><dt>ADS Sens Multiplier</dt><dd>0.81</dd></div>
-            <div><dt>Invert Mouse</dt><dd>Off</dd></div>
-            <div><dt>Polling Rate</dt><dd>1000 Hz</dd></div>
-            <div><dt>Windows Sens</dt><dd>6 / 11</dd></div>
-          </dl>
-        </div>
-        <div class="panel">
-          <h3 class="eyebrow">Crosshair</h3>
-          <div class="code">
-            <p class="k">Import code</p>
-            <p class="v">0;s;1;P;h;0;m;1;0l;2;0v;2;0o;1;0a;1;0f;0;1b;0</p>
-          </div>
-          <dl class="rows">
-            <div><dt>Color</dt><dd>White (default)</dd></div>
-            <div><dt>Outlines</dt><dd>Off</dd></div>
-            <div><dt>Center Dot</dt><dd>Off</dd></div>
-            <div><dt>Override Firing Error Offset</dt><dd>On</dd></div>
-            <div><dt>Inner Line Length</dt><dd>2 / 2 (H / V)</dd></div>
-            <div><dt>Inner Line Thickness</dt><dd>2</dd></div>
-            <div><dt>Inner Line Offset</dt><dd>1</dd></div>
-            <div><dt>Inner Line Opacity</dt><dd>1</dd></div>
-            <div><dt>Inner Movement Error</dt><dd>Off</dd></div>
-            <div><dt>Inner Firing Error</dt><dd>Off</dd></div>
-            <div><dt>Outer Lines</dt><dd>Off</dd></div>
-            <div><dt>Show Spectated Crosshairs</dt><dd>On</dd></div>
-          </dl>
-        </div>
-        <div class="panel">
-          <h3 class="eyebrow">Video</h3>
-          <dl class="rows">
-            <div><dt>Resolution</dt><dd>1920 x 1080 (16:9)</dd></div>
-            <div><dt>Aspect Ratio Method</dt><dd>Fill</dd></div>
-            <div><dt>Multithreaded Rendering</dt><dd>On</dd></div>
-            <div><dt>Material Quality</dt><dd>Low</dd></div>
-            <div><dt>Texture Quality</dt><dd>Low</dd></div>
-            <div><dt>Detail Quality</dt><dd>Low</dd></div>
-            <div><dt>UI Quality</dt><dd>Low</dd></div>
-            <div><dt>Vignette</dt><dd>Off</dd></div>
-            <div><dt>VSync</dt><dd>Off</dd></div>
-            <div><dt>Anti-Aliasing</dt><dd>None</dd></div>
-            <div><dt>Anisotropic Filtering</dt><dd>1x</dd></div>
-            <div><dt>Improve Clarity</dt><dd>On</dd></div>
-            <div><dt>Experimental Sharpening</dt><dd>On</dd></div>
-            <div><dt>Bloom</dt><dd>Off</dd></div>
-            <div><dt>Distortion</dt><dd>Off</dd></div>
-            <div><dt>Cast Shadows</dt><dd>Off</dd></div>
-            <div><dt>NVIDIA Reflex Low Latency</dt><dd>On</dd></div>
-            <div><dt>Max FPS Always</dt><dd>237</dd></div>
-            <div><dt>Max FPS in Menus</dt><dd>144</dd></div>
-          </dl>
-        </div>
-      </div>
+  <section class="section wrap ride-section" id="ride">
+    <div class="section-index"><span>03</span><span>MY RIDE</span></div>
+    <div class="ride-layout">
+      <div class="ride-copy"><p class="eyebrow">TWO WHEELS / ONE ESCAPE</p><h2>Built for<br><em>the ride.</em></h2><p>My current ride is a Mondial SMX 125. It's part of the supermoto life — simple, fun and always an excuse to take the longer way home.</p><div class="ride-spec"><span>BIKE</span><strong>MONDIAL SMX 125</strong></div><div class="ride-spec"><span>STYLE</span><strong>SUPERMOTO</strong></div></div>
+      <div class="ride-art" role="img" aria-label="Abstract monochrome supermoto-inspired graphic"><div class="wheel wheel-front"></div><div class="wheel wheel-back"></div><div class="bike-line line-a"></div><div class="bike-line line-b"></div><div class="bike-line line-c"></div><div class="bike-line line-d"></div><div class="bike-line line-e"></div><span class="ride-art-caption">SM / 125</span><span class="ride-art-number">02</span></div>
     </div>
   </section>
 
-  <section class="block wrap" id="build">
-    <div class="head reveal">
-      <p class="eyebrow">05 — PC Build &amp; Gear</p>
-      <h2>PC Build &amp; Gear</h2>
-    </div>
-    <div class="reveal">
-      <div class="grid2">
-        <div class="panel">
-          <h3 class="eyebrow">Rig</h3>
-          <dl class="rows">
-            <div><dt>CPU</dt><dd>AMD Ryzen 5 5500</dd></div>
-            <div><dt>GPU</dt><dd>NVIDIA RTX 2060 Super</dd></div>
-            <div><dt>Motherboard</dt><dd>MSI A520M-A PRO</dd></div>
-            <div><dt>RAM</dt><dd>Corsair Vengeance LPX 32GB</dd></div>
-            <div><dt>Storage</dt><dd>SNV3S 1TB NVMe</dd></div>
-            <div><dt>Case</dt><dd>BitFenix</dd></div>
-            <div><dt>Cooler</dt><dd>BitFenix</dd></div>
-          </dl>
-        </div>
-        <div class="panel">
-          <h3 class="eyebrow">Peripherals</h3>
-          <dl class="rows">
-            <div><dt>Monitor 1</dt><dd>Dahua LM25-E241B 24.5" IPS 240Hz 1ms</dd></div>
-            <div><dt>Monitor 2</dt><dd>MSI MAG 275CQF E18 180Hz 0.5ms</dd></div>
-            <div><dt>Mouse</dt><dd>Logitech G Pro X Superlight 2 SE</dd></div>
-            <div><dt>Mousepad</dt><dd>Fnatic XL</dd></div>
-            <div><dt>Keyboard</dt><dd>HyperX Alloy Origins Core 65%</dd></div>
-            <div><dt>Headset</dt><dd>HyperX Cloud II Wireless</dd></div>
-            <div><dt>Mic</dt><dd>FIFINE AmpliGame TAM6</dd></div>
-          </dl>
-        </div>
-      </div>
+  <section class="contact-section" id="contact">
+    <div class="wrap contact-wrap">
+      <div class="section-index"><span>04</span><span>GET IN TOUCH</span></div>
+      <p class="eyebrow">GOT SOMETHING IN MIND?</p><h2>Let's make<br><em>something happen.</em></h2>
+      <div class="contact-bottom"><p>Find me around the internet or just say hello.</p><div class="social-links"><a href="https://www.instagram.com/m.ruzickaa/" target="_blank" rel="noreferrer"><span>Instagram</span><span>@m.ruzickaa ↗</span></a><a href="https://github.com/Itz-Ryuu" target="_blank" rel="noreferrer"><span>GitHub</span><span>Itz-Ryuu ↗</span></a><button type="button" id="discord-copy" data-copy="itz.ryu."><span>Discord</span><span id="discord-label">itz.ryu. <span aria-hidden="true">⧉</span></span></button></div></div>
     </div>
   </section>
-
-  <footer>
-    <p>© <span id="year">2026</span> RYU</p>
-    <p>Built with care</p>
-  </footer>
 </main>
 
+<footer class="site-footer wrap"><a class="brand" href="#home"><span class="brand-mark">R</span><span>RYU<span class="brand-dot">.</span></span></a><span>MADE WITH INTENTION.</span><span>© <span id="year"></span> RYU</span></footer>
+
 <script>
-  // Loading screen
-  (function () {
-    var loader = document.getElementById("loader");
-    var bar = document.getElementById("loader-bar");
-    var pct = document.getElementById("loader-pct");
-    var start = Date.now();
-    var duration = 5000;
-    function frame() {
-      var p = Math.min(1, (Date.now() - start) / duration);
-      var v = Math.round(p * 100);
-      bar.style.width = v + "%";
-      pct.textContent = String(v).padStart(3, "0") + "%";
-      if (p < 1) requestAnimationFrame(frame);
-      else {
-        loader.classList.add("hide");
-        setTimeout(function () { loader.remove(); }, 350);
+(function () {
+  var year = document.getElementById("year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  var button = document.getElementById("discord-copy");
+  var label = document.getElementById("discord-label");
+  if (button && label) {
+    button.addEventListener("click", async function () {
+      var username = button.getAttribute("data-copy");
+      try {
+        await navigator.clipboard.writeText(username);
+        label.textContent = "Copied!";
+      } catch (error) {
+        var input = document.createElement("textarea");
+        input.value = username;
+        input.setAttribute("readonly", "");
+        input.style.position = "absolute";
+        input.style.left = "-9999px";
+        document.body.appendChild(input);
+        input.select();
+        var copied = document.execCommand("copy");
+        input.remove();
+        label.textContent = copied ? "Copied!" : username;
       }
-    }
-    requestAnimationFrame(frame);
-  })();
-
-  // Reveal on scroll
-  (function () {
-    var items = document.querySelectorAll(".reveal");
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("shown"); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
-    items.forEach(function (i) { io.observe(i); });
-  })();
-
-  // Section nav highlight
-  (function () {
-    var links = Array.prototype.slice.call(document.querySelectorAll(".topnav a"));
-    var map = {};
-    links.forEach(function (l) { map[l.getAttribute("href").slice(1)] = l; });
-    var io = new IntersectionObserver(function (entries) {
-      var visible = entries.filter(function (e) { return e.isIntersecting; })
-        .sort(function (a, b) { return b.intersectionRatio - a.intersectionRatio; })[0];
-      if (!visible) return;
-      links.forEach(function (l) { l.classList.remove("active"); });
-      if (map[visible.target.id]) map[visible.target.id].classList.add("active");
-    }, { rootMargin: "-45% 0px -45% 0px", threshold: [0, 0.25, 0.5, 1] });
-    Object.keys(map).forEach(function (id) {
-      var el = document.getElementById(id);
-      if (el) io.observe(el);
+      button.classList.add("copied");
+      window.setTimeout(function () {
+        label.innerHTML = 'itz.ryu. <span aria-hidden="true">⧉</span>';
+        button.classList.remove("copied");
+      }, 1800);
     });
-  })();
+  }
 
-  document.getElementById("year").textContent = new Date().getFullYear();
+  var sections = document.querySelectorAll("main section[id]");
+  var links = document.querySelectorAll(".nav a");
+  if ("IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        links.forEach(function (link) {
+          link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
+        });
+      });
+    }, { rootMargin: "-35% 0px -55% 0px" });
+    sections.forEach(function (section) { observer.observe(section); });
+  }
+})();
 </script>
